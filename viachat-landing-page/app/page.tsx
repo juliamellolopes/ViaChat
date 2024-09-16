@@ -1,7 +1,9 @@
-import Image from "next/image";
+import PaginaInicial from "./components/PaginaInicial/paginaIncial";
 
 export default function Home() {
   return (
-    <main></main>
+    <main>
+      <PaginaInicial/>
+    </main>
   );
 }
