@@ -43,25 +43,49 @@ export default function PaginaInicial() {
                 </button>
             </header>
 
-            <main className="flex flex-row items-start px-20 mt-30 space-y-6 ml-20">
-                <div className="w-[90vw] max-w-[516px] h-[70vh] max-h-[484px] space-y-6 mt-40">
-                    <h2 className="text-white text-6xl font-bold leading-tight">
-                        Atenda de forma 
-                        <span className='block text-6xl font-bold text-[#004B76]'>{palavraAtual} </span>
-                        no ViaChat
-                    </h2>
-                    <p className="text-white text-2xl leading-relaxed max-w-lg">
-                        Mude seu negócio e passe a vender 
-                        <p className='block'>mais com uma solução completa e integrada </p>
-                        de atendimento e vendas.
-                    </p>
-                    <button className="border-2 border-white text-white px-14 py-3 rounded-lg hover:bg-white hover:text-blue-500">
-                        FALE CONOSCO
-                    </button>
+            {/* Versão para Mobile */}
+            <main className="flex flex-col items-center px-4 md:hidden space-y-6 mt-12">
+                <div className="text-center space-y-6">
+                <h2 className="text-white text-5xl font-bold leading-tight">
+                    Atenda de forma 
+                    <span className="block text-5xl font-bold text-[#004B76]">{palavraAtual}</span>
+                    no ViaChat
+                </h2>
                 </div>
 
-                <div>
-                    <img src="/images/Frame1.png" alt="Frame1"/>
+                <div className="w-[80%] flex justify-center">
+                <img src="/images/Frame1.png" alt="Frame1" className="w-full h-auto" />
+                </div>
+
+                <p className="text-white text-xl leading-relaxed max-w-lg text-center">
+                Mude seu negócio e passe a vender mais com uma solução completa e integrada de atendimento e vendas.
+                </p>
+
+                <button className="border-2 border-white text-white px-14 py-3 rounded-lg hover:bg-white hover:text-blue-500">
+                FALE CONOSCO
+                </button>
+            </main>
+
+            {/* Versão para Desktop */}
+            <main className="hidden md:flex flex-row items-start px-20 mt-30 space-y-6 ml-20">
+                <div className="w-[90vw] max-w-[516px] h-[70vh] max-h-[484px] space-y-6 mt-40">
+                <h2 className="text-white text-6xl font-bold leading-tight">
+                    Atenda de forma 
+                    <span className="block text-6xl font-bold text-[#004B76]">{palavraAtual}</span>
+                    no ViaChat
+                </h2>
+                <p className="text-white text-2xl leading-relaxed max-w-lg">
+                    Mude seu negócio e passe a vender 
+                    <span className="block">mais com uma solução completa e integrada</span>
+                    de atendimento e vendas.
+                </p>
+                <button className="border-2 border-white text-white px-14 py-3 rounded-lg hover:bg-white hover:text-blue-500">
+                    FALE CONOSCO
+                </button>
+                </div>
+
+                <div className="w-[100%]">
+                <img src="/images/Frame1.png" alt="Frame1" className="w-full h-auto" />
                 </div>
             </main>
         </div>
