@@ -24,7 +24,7 @@ export default function PaginaInicial() {
 
 
     return (
-        <div className="min-h-screen bg-gradient-to-r from-[#099DE9] to-[#3AE2C3]">
+        <div className="w-full h-auto bg-gradient-to-r from-[#099DE9] to-[#3AE2C3]">
             <header className="flex justify-between items-center px-8 py-4">
                 <div className="flex items-center space-x-4 md:ml-36">
                     <img src="/images/logo_viachat.png" alt="Logo ViaChat" className="h-12 w-12" />
@@ -54,15 +54,15 @@ export default function PaginaInicial() {
                 </div>
 
                 <div className="w-[80%] flex justify-center">
-                <img src="/images/Frame1.png" alt="Frame1" className="w-full h-auto" />
+                    <img src="/images/Frame1.png" alt="Frame1" className="w-full h-auto" />
                 </div>
 
                 <p className="text-white text-xl leading-relaxed max-w-lg text-center">
-                Mude seu negócio e passe a vender mais com uma solução completa e integrada de atendimento e vendas.
+                    Mude seu negócio e passe a vender mais com uma solução completa e integrada de atendimento e vendas.
                 </p>
 
-                <button className="border-2 border-white text-white px-14 py-3 rounded-lg hover:bg-white hover:text-blue-500">
-                FALE CONOSCO
+                <button className="border-2 border-white text-white px-14 py-3 p-3 rounded-lg hover:bg-white hover:text-blue-500">
+                    FALE CONOSCO
                 </button>
             </main>
 
@@ -85,7 +85,7 @@ export default function PaginaInicial() {
                 </div>
 
                 <div className="w-[100%]">
-                <img src="/images/Frame1.png" alt="Frame1" className="w-full h-auto" />
+                    <img src="/images/Frame1.png" alt="Frame1" className="w-full h-auto" />
                 </div>
             </main>
         </div>

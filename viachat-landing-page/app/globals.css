@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .swiper-pagination {
+    @apply bottom-4;
+    /* Exemplo para mover a paginação para baixo */
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
